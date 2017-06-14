@@ -1,5 +1,27 @@
 {
   "name": "mandown-hook",
   "description": "A hook handler (e.g. from GitHub) to trigger mandown parsing",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "scripts": {
+    "build": "node_modules/.bin/tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grantila/mandown-hook.git"
+  },
+  "main": "dist/index.js",
+  "pre-commit": [
+    "build"
+  ],
+  "dependencies": {
+    "@types/node": "7.x",
+    "del": "2.x",
+    "execa": "0.x",
+    "mandown": "0.x"
+  },
+  "devDependencies": {
+    "pre-commit": "1.x",
+    "typescript": "2.x"
+  },
+  "typings": "./dist/index.d.ts"
 }
