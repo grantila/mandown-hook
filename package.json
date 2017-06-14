@@ -1,0 +1,5 @@
+{
+  "name": "mandown-hook",
+  "description": "A hook handler (e.g. from GitHub) to trigger mandown parsing",
+  "version": "0.0.1"
+}
